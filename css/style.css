@@ -1,0 +1,629 @@
+@import url(font-awesome-4.7.0/css/font-awesome.min.css);
+
+* {
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Encode Sans Expanded", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+b {
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  color: orange;
+}
+
+a:hover > b {
+  color: orange;
+}
+
+.clear-fix::after,
+.clear-fix::before {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+.position-relative {
+  position: relative;
+}
+.position-absolute {
+  position: absolute;
+}
+
+.title {
+  position: relative;
+  padding-bottom: 15px;
+  margin-bottom: 35px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.title:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: " ";
+  width: 100%;
+  height: 2px;
+  background-color: #ccc;
+}
+.title:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: " ";
+  width: 7%;
+  height: 5px;
+  background-color: orange;
+  z-index: 1;
+}
+
+.article-title {
+  padding: 20px 0;
+}
+.article-title a {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.info-bar {
+  padding: 10px 0 20px 0;
+}
+.info-bar li {
+  display: inline-block;
+  margin-right: 10px;
+  line-height: 24px;
+  font-size: 12px;
+}
+
+.color-orange {
+  color: orange;
+}
+
+.color-gray {
+  color: rgb(165, 165, 165);
+}
+
+.color-black {
+  color: #292b2c;
+}
+
+.color-white{
+    color: white;
+}
+
+@font-face {
+  font-family: "Encode Sans Expanded";
+  src: url(../fonts/Encode_Sans_Expanded/EncodeSansExpanded-Bold.ttf);
+}
+
+.app {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 60px;
+}
+
+.app header nav img {
+  float: left;
+  margin: 30px 0px;
+}
+.app header nav ul {
+  list-style-type: none;
+  float: right;
+  margin: 30px 0px;
+}
+.app header nav ul li {
+  display: inline-block;
+  margin: 0px 10px;
+}
+.app header nav ul li a {
+  font-size: 12.5px;
+}
+.app header nav ul li i {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.app header nav ul li i:hover {
+  color: orange;
+}
+
+.header-menu-burgur {
+  float: right;
+  background-color: white;
+  border: none;
+  margin: 30px 0px;
+  display: none;
+}
+
+.show {
+  display: inline-block !important;
+}
+
+.intro-row {
+  width: 100%;
+}
+
+.intro-h-600px {
+  height: 600px;
+}
+
+.intro-h-100 {
+  height: 100%;
+}
+
+.intro-h-2-3 {
+  height: calc(200% / 3);
+  margin-bottom: 10px;
+}
+
+.intro-h-1-3 {
+  height: calc(100% / 3);
+}
+
+.intro-h-50:first-of-type {
+  margin-bottom: 10px;
+}
+
+.intro-h-50 {
+  height: calc(50% - 5px);
+}
+
+.intro-2-3-col {
+  float: left;
+  margin-right: 10px;
+  width: calc(calc(200% / 3) - 10px);
+}
+
+.intro-1-3-col {
+  float: right;
+  margin-right: 10px;
+  width: calc(calc(100% / 3) - 12px);
+}
+
+.intro-1-3-item {
+  width: 100%;
+}
+
+.intro-1-3-col-item {
+  float: left;
+  width: calc(calc(100% / 3) - 10px);
+}
+.intro-1-3-col-item:nth-of-type(2) {
+  margin-left: 10px;
+  margin-right: 10px;
+  width: calc(calc(100% / 3) - 10px);
+}
+
+.bg-1 {
+  background: url(../img/slider-1-1200x900.jpg) no-repeat center;
+  background-size: cover;
+}
+.bg-2 {
+  background: url(../img/slider-2-450x600.jpg) no-repeat center;
+  background-size: cover;
+}
+.bg-3 {
+  background: url(../img/slider-3-450x600.jpg) no-repeat center;
+  background-size: cover;
+}
+.bg-4 {
+  background: url(../img/slider-4-450x600.jpg) no-repeat center;
+  background-size: cover;
+}
+.bg-5 {
+  background: url(../img/slider-5-450x600.jpg) no-repeat center;
+  background-size: cover;
+}
+.bg-6 {
+  background: url(../img/slider-6-450x600.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.intro-item-caption {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+.intro-item-caption h3,
+ul {
+  color: white;
+  font-size: 14px;
+}
+
+.caption-title {
+  bottom: 50px;
+  left: 20px;
+}
+
+.caption-title span {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.caption-title b {
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.caption-info {
+  bottom: 20px;
+  left: 20px;
+  padding: 0;
+}
+.caption-info li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.img-bg {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.container {
+  width: 100%;
+  margin-top: 50px;
+}
+
+main {
+  float: left;
+  width: calc(calc(200% / 3) - 25px);
+  margin-right: 25px;
+}
+
+.main-news {
+  margin-bottom: 20px;
+}
+
+.main-news article img {
+  width: 100%;
+}
+.main-news article p {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Arial;
+}
+
+.other-news .left,
+.other-news .right {
+  width: calc(50% - 25px);
+  float: left;
+  font-size: 14px;
+}
+.other-news .left {
+  margin-right: 25px;
+}
+.other-news .left img,
+.other-news .right img {
+  width: 100%;
+}
+
+aside {
+  float: right;
+  width: calc(100% / 3);
+}
+
+aside .header {
+  width: 95%;
+  margin-bottom: 40px;
+}
+aside .header ul {
+  list-style-type: none;
+  width: 100%;
+  padding: 0;
+}
+aside .header ul li {
+  background-color: #f9b500;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 13px;
+  margin: 1px;
+  font-family: Arial;
+}
+
+aside .popular-posts {
+  width: 100%;
+}
+aside .popular-posts ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+aside .popular-posts ul li img {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+aside .popular-posts ul li span {
+  float: right;
+  width: calc(100% - 120px);
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+aside .popular-posts ul li h4 {
+  font-size: 13px;
+  padding-top: 0;
+  color: black;
+  transition: color 0.2s ease-in-out;
+}
+aside .popular-posts ul li h4:hover {
+  color: orange;
+}
+
+aside .footer {
+  width: 100%;
+}
+
+aside .footer p {
+  font-family: Arial;
+  font-size: 15px;
+  line-height: 25px;
+  margin-bottom: 25px;
+}
+aside .footer form {
+  position: relative;
+}
+aside .footer form input[type="email"] {
+  width: 98%;
+  height: 40px;
+  border-radius: 5px;
+  border: 2px solid orange;
+  position: relative;
+  float: left;
+}
+aside .footer form button {
+  margin-right: -1px;
+  position: absolute;
+  top: 77px;
+  right: 1px;
+  float: right;
+  width: 52px;
+  height: 43px;
+  border: none;
+  background-color: orange;
+  transition: color 0.2s ease-in-out;
+  transition: background-color 0.2s ease-in-out;
+}
+aside .footer form button:hover {
+  color: white;
+  background-color: black;
+}
+aside .footer input[type="email"]:focus {
+  outline: none;
+  border: 3px solid orange;
+}
+
+::placeholder {
+  padding: 10px;
+}
+
+footer{
+    background: url(../img/map.png) no-repeat center;
+    background-color: #191919;
+    width: 100%;
+    padding: 10px 0;
+}
+
+footer .footer-content{
+    width: 80%;
+    margin-top: 50px;
+    border-bottom: 1px solid gainsboro;
+    background-color: rgba(25, 25, 25, 0.9);
+}
+
+footer .footer-content .news-bit{
+    width: calc(100%/3);
+    float: left;
+}
+footer .footer-content .news-bit img{
+    margin-bottom: 20px;
+}
+footer .footer-content .news-bit p:first-of-type{
+    font-family: Arial;
+    line-height: 25px;
+    margin-bottom: 35px;
+    color: #ccc;
+}
+footer .footer-content .news-bit p:last-of-type{
+    font-family: Arial;
+    line-height: 25px;
+}
+
+footer .footer-content .most-popular{
+    float: left;
+    width: calc(calc(100%/3) - 20px);
+}
+footer .footer-content .most-popular section:first-of-type{
+    padding-bottom: 20px;
+    border-bottom: 1px solid gainsboro;
+}
+footer .footer-content .most-popular h4,section{
+    margin-bottom: 38px;
+}
+footer .footer-content .most-popular section a{
+    font-size: 13px;
+}
+footer .footer-content .most-popular section p{
+    font-size: 11px;
+    font-family: Arial;
+    line-height: 30px;
+}
+
+footer .news-bit,
+footer .most-popular section{
+    margin-right: 40px;
+}
+
+footer .footer{
+    width: 80%;
+}
+footer .footer ul{
+    padding-left: 0;
+}
+footer .footer .left{
+    float: left;
+}
+footer .footer .left li{
+    display: inline-block;
+    padding-right: 10px;
+}
+footer .footer .right{
+    float: right;
+}
+footer .footer .right li{
+    display: inline-block;
+    padding-right: 15px;
+}
+
+@media (max-width: 1199.98px) {
+  .app {
+    width: 992px;
+  }
+}
+@media (max-width: 991.98px) {
+  .app {
+    width: 768px;
+  }
+
+  .app header nav img {
+    height: 20px;
+    width: 100px;
+    margin: 30px 0;
+  }
+
+  .app header nav ul li {
+    margin: 0 5px;
+  }
+
+  main{
+      width: 100%;
+      float: none;
+  }
+  aside{
+      width: 100%;
+      float: none;
+  }
+  aside .popular-posts ul li{
+      margin-bottom: 20px;
+  }
+  aside .footer form button{
+        top: 52px;
+        right: 9px;
+  }
+}
+@media (max-width: 767.98px) {
+  .app {
+    width: 576px;
+  }
+
+  .header-menu-burgur {
+    display: inline-block;
+  }
+
+  .app header nav ul {
+    display: none;
+    width: 100%;
+  }
+
+  .app header nav ul li {
+    display: block;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid gainsboro;
+  }
+
+  .intro-2-3-col {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
+
+  .intro-1-3-col {
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+    float: none;
+  }
+  .intro-1-3-col-item {
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+    float: none;
+  }
+  .intro-1-3-col-item:nth-of-type(2) {
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+    float: none;
+  }
+  .intro-h-600px {
+    height: auto;
+  }
+  .intro-h-100px {
+    height: auto;
+  }
+  .intro-h-50px {
+    height: auto;
+  }
+  .intro-h-2-3 {
+    height: auto;
+  }
+  .intro-h-1-3 {
+    height: auto;
+  }
+  .h-md-300px {
+    height: 300px;
+  }
+  aside .footer form button{
+            top: 77px;
+    right: 5px;
+  }
+  main .other-news article{
+      width: 100% !important;
+      float: none;
+  }
+}
+@media (max-width: 575.98px) {
+  .app {
+    width: calc(100% - 30px);
+    padding: 0 15px;
+  }
+  aside .footer form button{
+    right: 2px;
+  }
+
+  footer .news-bit,
+  footer .most-popular{
+      width: 100% !important;
+      float: none !important;
+  }
+
+  footer .footer ul{
+    float: none !important;
+    width: 100%;
+    margin-bottom: 30px;
+    font-size: 10px;
+    text-align: center;
+  }
+
+  footer .footer ul:first-of-type{
+    line-height: 20px;
+  }
+}
